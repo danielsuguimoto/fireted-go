@@ -1,0 +1,4 @@
+scripts:
+  go: kool docker --volume=kool_gopath:/go golang:1.18 go
+  fmt: kool run go fmt ./...
+  lint: kool docker --volume=kool_gopath:/go golangci/golangci-lint:v1.46.0 golangci-lint run -v

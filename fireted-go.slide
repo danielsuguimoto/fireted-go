@@ -1,0 +1,32 @@
+# Introdução a Golang
+
+28 de Julho de 2022
+Daniel Jun Suguimoto
+daniel.suguimoto@fireworkweb.com
+
+## O que é Golang?
+.background images/background.jpeg
+
+- Linguagem de programação open source
+- Desenvolvida pela Google (Robert Griesemer, Rob Pike e Ken Thompson)
+- Criada para resolver problemas da Google de forma simples, eficiente e performática
+
+.image images/gopher.png _ 400
+
+## Características
+.background images/background.jpeg
+
+- Compilada
+- Estaticamente tipada
+- Coleta de lixo
+- Programação concorrente
+- Simples e pequena
+
+.image images/gopher-drunk.png _ 400
+
+## Hello World
+.background images/background.jpeg
+
+.play codes/hello.go
+
+.image images/gopher-hello.png _ 800

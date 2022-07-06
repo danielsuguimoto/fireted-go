@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  presentation:
+    build: .
+    ports:
+      - 3999:3999
+    volumes:
+     - .:/presentation:delegated
+    networks:
+      - kool_local
+      - kool_global
+
+networks:
+  kool_local:
+  kool_global:
+    external: true
+    name: "${KOOL_GLOBAL_NETWORK:-kool_global}"
