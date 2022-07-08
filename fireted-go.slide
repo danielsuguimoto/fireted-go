@@ -61,9 +61,25 @@ Funções
 * Goroutines
 .background images/background.jpeg
 
-.play codes/goroutines.go /START OMIT/,/END OMIT/
+- Lightweight threads
+- Métodos ou funções que são executados em concorrência
+- Compartilham o mesmo espaço na memória
 
 .image images/gopher-goroutines.png _ 500
+
+* Goroutines
+.background images/background.jpeg
+
+.play codes/goroutines.go /START OMIT/,/END OMIT/
+
+* Channels
+.background images/background.jpeg
+
+- Move informação entre várias partes do código
+- Goroutine-safe
+- Buffered ou unbuffered
+
+.image images/gopher-channels.svg _ 700
 
 * Channels
 .background images/background.jpeg
