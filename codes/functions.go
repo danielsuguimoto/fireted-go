@@ -12,7 +12,7 @@ func getHelloMessage(name string) string {
 }
 
 func main() {
-	message := getHelloMessage("Daniel")
+	message := getHelloMessage("Hideo cabeludo")
 	saySomething(message)
 }
 //END OMIT

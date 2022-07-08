@@ -11,7 +11,7 @@ daniel.suguimoto@fireworkweb.com
 - Desenvolvida pela Google (Robert Griesemer, Rob Pike e Ken Thompson)
 - Criada para resolver problemas da Google de forma simples, eficiente e performática
 
-.image images/gopher.png _ 400
+.image images/gopher-fine.png _ 600
 
 * Características
 .background images/background.jpeg
@@ -39,3 +39,37 @@ Variáveis
 
 Funções
 .code codes/functions.go /START OMIT/,/END OMIT/
+
+* Mais sobre funções
+.background images/background.jpeg
+
+.play codes/morefunctions.go /START OMIT/,/END OMIT/
+
+* Estruturas de controle
+.background images/background.jpeg
+
+.code codes/if.go /START OMIT/,/END OMIT/
+.code codes/for.go /START OMIT/,/END OMIT/
+.code codes/switch.go /START OMIT/,/END OMIT/
+.code codes/defer.go /START OMIT/,/END OMIT/
+
+* Não existem classes, mas...
+.background images/background.jpeg
+
+.code codes/struct.go /START OMIT/,/END OMIT/
+
+* Goroutines
+.background images/background.jpeg
+
+.play codes/goroutines.go /START OMIT/,/END OMIT/
+
+.image images/gopher-goroutines.png _ 500
+
+* Channels
+.background images/background.jpeg
+
+.play codes/channels.go /START OMIT/,/END OMIT/
+
+* Perguntas?
+.background images/background.jpeg
+.image images/gopher-questions.png _ 600
