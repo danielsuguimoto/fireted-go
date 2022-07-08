@@ -12,13 +12,12 @@ func fazNumeroDois(chTerminou chan int) {
 }
 func leJornal(chTerminou chan int, chPaginas chan int) {
 	paginas := 0
-	for {
+	for _ = range time.Tick(2 * time.Second) {
 		select {
 		case <-chTerminou:
 			chPaginas <- paginas
 			return
 		default:
-			time.Sleep(2 * time.Second)
 			paginas++
 		}
 	}
@@ -27,6 +26,6 @@ func main() {
 	chTerminou, chPaginas := make(chan int, 1), make(chan int, 1)
 	go fazNumeroDois(chTerminou)
 	go leJornal(chTerminou, chPaginas)
-	fmt.Println(<-chPaginas)
+	fmt.Println("Páginas lidas: ", <-chPaginas)
 }
 //END OMIT
